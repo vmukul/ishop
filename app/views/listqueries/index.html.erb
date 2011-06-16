@@ -1,0 +1,29 @@
+<h1>Search profile</h1>
+
+<table>
+  <tr>
+    <th>Field</th>
+    <th>Operator</th>
+    <th>Field Value</th>
+    <th>Binding</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @listquery.each do |listquery| %>
+  <tr>
+    <td><%= listquery.sfield %></td>
+    <td><%=listquery.soper %></td>
+    <td><%= listquery.svalue %></td>
+    <td><%= listquery.sbind %></td>
+
+    <td><%= link_to 'Edit', edit_listquery_path(listquery) %></td>
+    <td><%= link_to 'Delete', listquery, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add new item', new_listquery_path %>

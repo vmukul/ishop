@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/controllers/lists_controller.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/test/unit/listquery_test.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/models/listquery.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/db/migrate/20110614222053_create_listqueries.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/test/unit/helpers/listqueries_helper_test.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/helpers/listqueries_helper.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/test/functional/listqueries_controller_test.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/controllers/listqueries_controller.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/listqueries/_form.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/models/user.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/layouts/application.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/listqueries/edit.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/config/routes.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/lists/edit.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/listqueries/index.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/listqueries/new.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/controllers/application_controller.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/helpers/application_helper.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/helpers/users_helper.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/helpers/sessions_helper.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/helpers/pages_helper.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/helpers/lists_helper.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/controllers/pages_controller.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/pages/new.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/controllers/sessions_controller.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/sessions/new.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/lists/index.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/lists/show.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/listqueries/show.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/lists/_form.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/models/list.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/lists/done.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/controllers/users_controller.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/config/environment.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/Rakefile</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/test/test_helper.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/db/migrate/20110612030656_create_lists.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/db/migrate/20110612003410_create_users.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/config/database.yml</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/config/application.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/config/initializers/backtrace_silencers.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/config/environments/development.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/config/environments/test.rb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/app/views/users/new.html.erb</file>
+        <file>file:/C:/Documents%20and%20Settings/vm8456/myauth/Gemfile</file>
+    </open-files>
+</project-private>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  crdate: 2011-06-11
+  store: MyString
+  item: MyString
+  qty: MyString
+  mdone: false
+  mdel: false
+  user: 
+
+two:
+  crdate: 2011-06-11
+  store: MyString
+  item: MyString
+  qty: MyString
+  mdone: false
+  mdel: false
+  user: 

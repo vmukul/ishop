@@ -1,0 +1,28 @@
+<%= form_for @list do |f| %>
+  <p>
+    <%= f.label :crdate %>
+    <%= f.date_select :crdate %>
+  </p>
+  <p>
+    <%= f.label :store %>
+     <%= f.text_field :store %>
+    
+  </p>
+   <p>
+    <%= f.label :item %>
+    <%= f.text_field :item %>
+  </p>
+    <p>
+    <%= f.label :qty %>
+    <%= f.text_field :qty, :value => 1 %>
+  </p>
+
+      <p>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+</p>
+
+  <div class="actions">
+    <%= f.submit 'Add Item'%>
+  </div>
+
+<% end %>

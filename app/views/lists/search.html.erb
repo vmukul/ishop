@@ -1,0 +1,17 @@
+<h1>Search</h1>
+
+<%= form_for @list do |f| %>
+  
+  <p>
+    <%= f.label :crdate %>
+    <%= f.date_select :crdate %>
+  </p>
+  <p>
+     <%= f.select (:voper, ("<option><</option>,<option>></option>,<option><=</option>,<option>>=</option>,<option>=</option>").html_safe)  %><br />
+  </p>
+ 
+
+  <p class="button"><%= f.submit%></p>
+<% end %>
+
+

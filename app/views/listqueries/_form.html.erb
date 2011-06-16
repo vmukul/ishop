@@ -1,0 +1,27 @@
+<%= form_for @listquery do |f| %>
+  <p>
+    <%= f.label :sfield %>
+    <%= f.text_field :sfield %>
+  </p>
+  <p>
+    <%= f.label :soper %>
+     <%= f.text_field :soper %>
+  </p>
+   <p>
+    <%= f.label :svalue %>
+    <%= f.text_field :svalue %>
+  </p>
+    <p>
+    <%= f.label :sbind %>
+    <%= f.text_field :sbind %>
+  </p>
+
+      <p>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+</p>
+
+  <div class="actions">
+    <%= f.submit 'Add Or Update record'%>
+  </div>
+
+<% end %>
