@@ -1,0 +1,36 @@
+<h1>Shopping list</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Store</th>
+    <th>Item</th>
+    <th>Qty</th>
+    <th>Done</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @list.each do |list| %>
+  <tr>
+    <td><%= list.crdate %></td>
+    <td><%= list.store %></td>
+    <td><%= list.item %></td>
+    <td><%= list.qty %></td>
+     <td><%= list.mdone %></td>
+
+    <%  if list.mdone? %>
+    <td><%= link_to 'UnDone', :controller => "lists", :action => "done", :id => list %></td>
+   <%  else %>
+   <td><%= link_to '  Done', :controller => "lists", :action => "done", :id => list %></td>
+  <%    end %>
+    <td><%= link_to 'Edit', edit_list_path(list) %></td>
+    <td><%= link_to 'Delete', list, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add new item', new_list_path %>

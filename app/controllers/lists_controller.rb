@@ -3,6 +3,7 @@ class ListsController < ApplicationController
         @list = List.where(:user_id => current_user.id).order(:store)
         respond_to do |format|
       format.html # index.html.erb
+      format.iphone # index.iphone.erb
         end
   end
 

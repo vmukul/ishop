@@ -1,0 +1,10 @@
+  .big_link {
+      font-size: 40px;
+    	font-weight: bold;
+    	font-family: Helvetica;
+    	color: #00f;
+    	text-decoration: none;
+    	text-align: center;
+    	display: block;
+    	width: 980px;
+    }

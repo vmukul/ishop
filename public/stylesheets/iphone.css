@@ -1,0 +1,47 @@
+/* 
+    Document   : iphone
+    Created on : Jun 16, 2011, 3:23:09 PM
+    Author     : vm8456
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+    h1,h2,h3 {
+    	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    	color: #000000;
+    }
+
+    h1 {
+    	font-weight: bold;
+    	font-size: 175%;
+    	margin: 0;
+    }
+
+    body {
+    	margin: 0;
+    	padding: 0;
+    }
+
+    #header {
+    	width: 320px;
+    	height: 40px;
+    	margin: 0 auto;
+    	background: url(/images/Bluecolor.gif) no-repeat;
+    }
+
+ .mobile_link {
+      font-size: 14px;
+    	font-weight: bold;
+    	font-family: Helvetica;
+    	color: #00f;
+    	text-decoration: none;
+    	text-align: center;
+      display: block;
+    	width: 320px;
+    }
+

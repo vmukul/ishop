@@ -4,6 +4,10 @@ Myauth::Application.routes.draw do
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "done" => "lists#done"
   get "undone" => "lists#undone"
+
+  get "browsers/desktop"
+  get "browsers/mobile"
+
   
   root :to => "pages#new"
   resources :users
