@@ -9,6 +9,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'heroku', '>= 1.19.1'
 gem "rake", "0.8.7"
+gem "jquery-rails"
 
 # Use unicorn as the web server
 # gem 'unicorn'

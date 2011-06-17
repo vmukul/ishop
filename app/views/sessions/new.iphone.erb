@@ -1,4 +1,8 @@
+<div data-role="header">
 <h1>Log in</h1>
+<%= link_to "Back", root_path, "data-icon" => "plus", "class" => "ui-btn-left" %>
+</div>
+
 
 <%= form_tag sessions_path do %>
   <p>
@@ -11,3 +15,5 @@
   </p>
   <p class="button"><%= submit_tag 'Log in'%></p>
 <% end %>
+
+
