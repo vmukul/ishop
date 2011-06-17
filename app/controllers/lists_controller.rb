@@ -2,8 +2,8 @@ class ListsController < ApplicationController
   def index
         @list = List.where(:user_id => current_user.id).order(:store)
         respond_to do |format|
-      format.html # index.html.erb
-      format.iphone # index.iphone.erb
+        format.html # index.html.erb
+        format.iphone # index.iphone.erb
         end
   end
 
@@ -16,8 +16,10 @@ class ListsController < ApplicationController
     respond_to do |format|
       if @list.save
         format.html { redirect_to(lists_path, :notice => 'Item added',:style => "color:red" ) }
+        format.iphone { redirect_to(lists_path, :notice => 'Item added',:style => "color:red" ) }
       else
         format.html { render :action => "new" }
+        format.iphone { redirect_to(lists_path, :notice => 'Item added',:style => "color:red" ) }
       end
     end
   end
@@ -26,6 +28,7 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
     respond_to do |format|
       format.html # show.html.erb
+      format.iphone
     end
   end
 
@@ -34,6 +37,7 @@ class ListsController < ApplicationController
     @list.destroy
     respond_to do |format|
       format.html { redirect_to(lists_url) }
+      format.iphone { redirect_to(lists_url) }
     end
   end
 
@@ -46,7 +50,8 @@ class ListsController < ApplicationController
   end
      respond_to do |format|
         format.html { redirect_to(lists_path, :notice => 'List item market as Done or Undone') }
-    end
+        format.iphone { redirect_to(lists_path, :notice => 'List item market as Done or Undone') }
+     end
     end
 
   def update
@@ -54,8 +59,10 @@ class ListsController < ApplicationController
     respond_to do |format|
       if @list.update_attributes(params[:list])
         format.html { redirect_to(@list, :notice => 'Item updated.') }
+        format.iphone { redirect_to(@list, :notice => 'Item updated.') }
       else
       format.html { render :action => "edit" }
+      format.iphone { render :action => "edit" }
       end
     end
 

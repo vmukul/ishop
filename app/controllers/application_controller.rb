@@ -8,14 +8,12 @@ class ApplicationController < ActionController::Base
       request.user_agent =~ /(Mobile\/.+Safari)/
     end
   
-
   def set_iphone_format
       if is_iphone_request?
         request.format = :iphone
       end
     end
  
-
    def set_iphone_format
       if is_iphone_request? or request.format.to_sym == :iphone
         request.format = if cookies["browser"] == "desktop"
