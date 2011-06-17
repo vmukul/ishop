@@ -12,7 +12,7 @@
 
 <% @list.each do |list| %>
   <tr>
-    <td><%= list.crdate %></td>
+    <td><%= list.crdate.strftime("%D") %></td>
     <td><%= list.store %></td>
     <td><%= list.item %></td>
     <td><%= list.qty %></td>
