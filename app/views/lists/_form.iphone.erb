@@ -1,7 +1,7 @@
 <%= form_for @list do |f| %>
   <p>
     <%= f.label :crdate %>
-    <%= f.date_select :crdate %>
+    <%= f.text_field :crdate,:value => Time.now.strftime("%x") %>
   </p>
   <p>
     <%= f.label :store %>
@@ -22,7 +22,7 @@
 </p>
 
   <div class="actions">
-    <%= f.submit 'Add Item'%>
+    <%= f.submit 'Save Item'%>
   </div>
 
 <% end %>

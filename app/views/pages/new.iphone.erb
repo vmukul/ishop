@@ -2,10 +2,9 @@
 
 <% if current_user %>
     <h1>Logged in as <%= current_user.email %> </h1>
-    <br/>
-   <%= link_to "See list", lists_path, "data-icon" => "plus", "class" => "ui-btn-left" %>
-   <%= link_to "Log out", log_out_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
-  <br/>
+    
+   <%= link_to "See list", lists_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
+   <%= link_to "Log out", log_out_path, "data-icon" => "plus", "class" => "ui-btn-left" %>
   <% else %>
     <h1>Shopping list</h1>
     <%= link_to "Sign up", sign_up_path, "data-icon" => "plus", "class" => "ui-btn-left" %>

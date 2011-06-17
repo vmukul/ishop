@@ -37,7 +37,7 @@ class ListsController < ApplicationController
     @list.destroy
     respond_to do |format|
       format.html { redirect_to(lists_url) }
-      format.iphone { redirect_to(lists_url) }
+      format.iphone { redirect_to lists_path }
     end
   end
 
@@ -58,8 +58,8 @@ class ListsController < ApplicationController
      @list = List.find(params[:id])
     respond_to do |format|
       if @list.update_attributes(params[:list])
-        format.html { redirect_to(@list, :notice => 'Item updated.') }
-        format.iphone { redirect_to(@list, :notice => 'Item updated.') }
+        format.html { redirect_to(lists_path, :notice => 'Item updated.') }
+        format.iphone { redirect_to(lists_path, :notice => 'Item updated.') }
       else
       format.html { render :action => "edit" }
       format.iphone { render :action => "edit" }
