@@ -17,13 +17,12 @@
   <% if current_user %>
     Welcome back.... <%= current_user.email %><br />
     <br/>
-   <%= link_to "Home", root_path %><br />
-   <%= link_to "Current shopping list", lists_path %><br />
-   <%= link_to "Log out", log_out_path %><br />
+   <%= link_to "Home", root_path %>
+   <%= link_to "See list", lists_path %>
+   <%= link_to "Log out", log_out_path %>
   <br/>
 
-  
-
+  <% if false %>
     <% if is_iphone_request? %>
       <%= link_to "Switch To Mobile Safari View",
           {:controller => "browsers", :action => :mobile},
@@ -33,11 +32,12 @@
   <%= link_to "Switch To Desktop View",
           {:controller => "browsers", :action => :desktop},
           :class => "mobile_link"  %>
+<% end %>
 
   <% else %>
-    <%= link_to "Home", root_path %><br />
+    <%= link_to "Home", root_path %>
     <%= link_to "Sign up", sign_up_path %> or
-    <%= link_to "Log in", log_in_path %>
+    <%= link_to "Log in", log_in_path %> 
      <br/>
   <% end %>
 </div> 
