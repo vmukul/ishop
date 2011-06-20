@@ -1,36 +1,44 @@
-        log_in GET    /log_in(.:format)               {:controller=>"sessions", :action=>"new"}
-       sign_up GET    /sign_up(.:format)              {:controller=>"users", :action=>"new"}
-       log_out GET    /log_out(.:format)              {:controller=>"sessions", :action=>"destroy"}
-          done GET    /done(.:format)                 {:controller=>"lists", :action=>"done"}
-        undone GET    /undone(.:format)               {:controller=>"lists", :action=>"undone"}
-        search GET    /search(.:format)               {:controller=>"lists", :action=>"search"}
-          root        /(.:format)                     {:controller=>"pages", :action=>"new"}
-         users GET    /users(.:format)                {:controller=>"users", :action=>"index"}
-               POST   /users(.:format)                {:controller=>"users", :action=>"create"}
-      new_user GET    /users/new(.:format)            {:controller=>"users", :action=>"new"}
-     edit_user GET    /users/:id/edit(.:format)       {:controller=>"users", :action=>"edit"}
-          user GET    /users/:id(.:format)            {:controller=>"users", :action=>"show"}
-               PUT    /users/:id(.:format)            {:controller=>"users", :action=>"update"}
-               DELETE /users/:id(.:format)            {:controller=>"users", :action=>"destroy"}
-      sessions GET    /sessions(.:format)             {:controller=>"sessions", :action=>"index"}
-               POST   /sessions(.:format)             {:controller=>"sessions", :action=>"create"}
-   new_session GET    /sessions/new(.:format)         {:controller=>"sessions", :action=>"new"}
-  edit_session GET    /sessions/:id/edit(.:format)    {:controller=>"sessions", :action=>"edit"}
-       session GET    /sessions/:id(.:format)         {:controller=>"sessions", :action=>"show"}
-               PUT    /sessions/:id(.:format)         {:controller=>"sessions", :action=>"update"}
-               DELETE /sessions/:id(.:format)         {:controller=>"sessions", :action=>"destroy"}
-         lists GET    /lists(.:format)                {:controller=>"lists", :action=>"index"}
-               POST   /lists(.:format)                {:controller=>"lists", :action=>"create"}
-      new_list GET    /lists/new(.:format)            {:controller=>"lists", :action=>"new"}
-     edit_list GET    /lists/:id/edit(.:format)       {:controller=>"lists", :action=>"edit"}
-          list GET    /lists/:id(.:format)            {:controller=>"lists", :action=>"show"}
-               PUT    /lists/:id(.:format)            {:controller=>"lists", :action=>"update"}
-               DELETE /lists/:id(.:format)            {:controller=>"lists", :action=>"destroy"}
-   listqueries GET    /listqueries(.:format)          {:controller=>"listqueries", :action=>"index"}
-               POST   /listqueries(.:format)          {:controller=>"listqueries", :action=>"create"}
- new_listquery GET    /listqueries/new(.:format)      {:controller=>"listqueries", :action=>"new"}
-edit_listquery GET    /listqueries/:id/edit(.:format) {:controller=>"listqueries", :action=>"edit"}
-     listquery GET    /listqueries/:id(.:format)      {:controller=>"listqueries", :action=>"show"}
-               PUT    /listqueries/:id(.:format)      {:controller=>"listqueries", :action=>"update"}
-               DELETE /listqueries/:id(.:format)      {:controller=>"listqueries", :action=>"destroy"}
+(in c:/Documents and Settings/vm8456/ishop2)
+          log_in GET    /log_in(.:format)               {:action=>"new", :controller=>"sessions"}
+         sign_up GET    /sign_up(.:format)              {:action=>"new", :controller=>"users"}
+         log_out GET    /log_out(.:format)              {:action=>"destroy", :controller=>"sessions"}
+            done GET    /done(.:format)                 {:action=>"done", :controller=>"lists"}
+          undone GET    /undone(.:format)               {:action=>"undone", :controller=>"lists"}
+browsers_desktop GET    /browsers/desktop(.:format)     {:action=>"desktop", :controller=>"browsers"}
+ browsers_mobile GET    /browsers/mobile(.:format)      {:action=>"mobile", :controller=>"browsers"}
+            root        /(.:format)                     {:action=>"new", :controller=>"pages"}
+
+           users GET    /users(.:format)                {:action=>"index", :controller=>"users"}
+                 POST   /users(.:format)                {:action=>"create", :controller=>"users"}
+        new_user GET    /users/new(.:format)            {:action=>"new", :controller=>"users"}
+       edit_user GET    /users/:id/edit(.:format)       {:action=>"edit", :controller=>"users"}
+            user GET    /users/:id(.:format)            {:action=>"show", :controller=>"users"}
+                 PUT    /users/:id(.:format)            {:action=>"update", :controller=>"users"}
+                 DELETE /users/:id(.:format)            {:action=>"destroy", :controller=>"users"}
+
+        sessions GET    /sessions(.:format)             {:action=>"index", :controller=>"sessions"}
+                 POST   /sessions(.:format)             {:action=>"create", :controller=>"sessions"}
+     new_session GET    /sessions/new(.:format)         {:action=>"new", :controller=>"sessions"}
+    edit_session GET    /sessions/:id/edit(.:format)    {:action=>"edit", :controller=>"sessions"}
+         session GET    /sessions/:id(.:format)         {:action=>"show", :controller=>"sessions"}
+                 PUT    /sessions/:id(.:format)         {:action=>"update", :controller=>"sessions"}
+                 DELETE /sessions/:id(.:format)         {:action=>"destroy", :controller=>"sessions"}
+
+
+           lists GET    /lists(.:format)                {:action=>"index", :controller=>"lists"}
+                 POST   /lists(.:format)                {:action=>"create", :controller=>"lists"}
+        new_list GET    /lists/new(.:format)            {:action=>"new", :controller=>"lists"}
+       edit_list GET    /lists/:id/edit(.:format)       {:action=>"edit", :controller=>"lists"}
+            list GET    /lists/:id(.:format)            {:action=>"show", :controller=>"lists"}
+                 PUT    /lists/:id(.:format)            {:action=>"update", :controller=>"lists"}
+                 DELETE /lists/:id(.:format)            {:action=>"destroy", :controller=>"lists"}
+    
+
+     listqueries GET    /listqueries(.:format)          {:action=>"index", :controller=>"listqueries"}
+                 POST   /listqueries(.:format)          {:action=>"create", :controller=>"listqueries"}
+   new_listquery GET    /listqueries/new(.:format)      {:action=>"new", :controller=>"listqueries"}
+  edit_listquery GET    /listqueries/:id/edit(.:format) {:action=>"edit", :controller=>"listqueries"}
+       listquery GET    /listqueries/:id(.:format)      {:action=>"show", :controller=>"listqueries"}
+                 PUT    /listqueries/:id(.:format)      {:action=>"update", :controller=>"listqueries"}
+                 DELETE /listqueries/:id(.:format)      {:action=>"destroy", :controller=>"listqueries"}
 

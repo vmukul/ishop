@@ -12,9 +12,9 @@ class SessionsController < ApplicationController
       if user
         session[:user_id] = user.id
         @cu = 1
-        redirect_to lists_path, :notice => " Logged in as "
+        redirect_to lists_path
       else
-        flash.now.alert = "Invalid email or password"
+        flash.now.alert = "Invalid login"
         render "new"
       end
     end
@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
     def destroy
       session[:user_id] = nil
       @cu = 2
-      redirect_to root_path, :notice =>  "You have logged out of the "
+      redirect_to root_path, :notice =>  "Logged out"
 
     end
 

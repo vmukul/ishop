@@ -1,13 +1,9 @@
 class User < ActiveRecord::Base
   has_many :lists
   has_one :listquery
-  
   attr_accessible :email, :password, :password_confirmation
-  
   attr_accessor :password
   before_save :encrypt_password
-  
-  attr_accessor :password
   validates_confirmation_of :password
   validates_presence_of :password, :on => :create
   validates_presence_of :email

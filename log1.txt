@@ -1,0 +1,102 @@
+2011-06-20T05:18:24+00:00 heroku[nginx]: GET /log_out HTTP/1.1 | 68.34.28.20 | 868 | http | 302
+2011-06-20T05:18:24+00:00 heroku[nginx]: GET / HTTP/1.1 | 68.34.28.20 | 1386 | http | 200
+2011-06-20T05:18:30+00:00 app[web.1]: 
+2011-06-20T05:18:30+00:00 app[web.1]: 
+2011-06-20T05:18:30+00:00 app[web.1]: Started GET "/log_in" for 68.34.28.20 at 2011-06-19 22:18:30 -0700
+2011-06-20T05:18:30+00:00 app[web.1]:   Processing by SessionsController#new as */*
+2011-06-20T05:18:30+00:00 heroku[router]: GET hollow-stone-599.heroku.com/log_in dyno=web.1 queue=0 wait=0ms service=10ms bytes=1757
+2011-06-20T05:18:30+00:00 app[web.1]: Rendered sessions/new.iphone.erb within layouts/application (1.3ms)
+2011-06-20T05:18:30+00:00 app[web.1]: Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+2011-06-20T05:18:30+00:00 heroku[nginx]: GET /log_in HTTP/1.1 | 68.34.28.20 | 287 | http | 304
+2011-06-20T05:18:32+00:00 app[web.1]: 
+2011-06-20T05:18:32+00:00 app[web.1]: 
+2011-06-20T05:18:32+00:00 app[web.1]: Started GET "/" for 68.34.28.20 at 2011-06-19 22:18:32 -0700
+2011-06-20T05:18:32+00:00 app[web.1]:   Processing by PagesController#new as */*
+2011-06-20T05:18:32+00:00 app[web.1]: Rendered pages/new.iphone.erb within layouts/application (1.0ms)
+2011-06-20T05:18:32+00:00 app[web.1]: Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+2011-06-20T05:18:32+00:00 heroku[router]: GET hollow-stone-599.heroku.com/ dyno=web.1 queue=0 wait=0ms service=9ms bytes=1233
+2011-06-20T05:18:33+00:00 heroku[nginx]: GET / HTTP/1.1 | 68.34.28.20 | 1203 | http | 200
+2011-06-20T05:18:35+00:00 app[web.1]: 
+2011-06-20T05:18:35+00:00 app[web.1]: 
+2011-06-20T05:18:35+00:00 app[web.1]: Started GET "/sign_up" for 68.34.28.20 at 2011-06-19 22:18:35 -0700
+2011-06-20T05:18:35+00:00 app[web.1]:   Processing by UsersController#new as */*
+2011-06-20T05:18:35+00:00 app[web.1]: Rendered users/new.iphone.erb within layouts/application (4.4ms)
+2011-06-20T05:18:35+00:00 app[web.1]: Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+2011-06-20T05:18:35+00:00 heroku[router]: GET hollow-stone-599.heroku.com/sign_up dyno=web.1 queue=0 wait=0ms service=17ms bytes=2089
+2011-06-20T05:18:35+00:00 heroku[nginx]: GET /sign_up HTTP/1.1 | 68.34.28.20 | 1447 | http | 200
+2011-06-20T05:19:08+00:00 app[web.1]: 
+2011-06-20T05:19:08+00:00 app[web.1]: 
+2011-06-20T05:19:08+00:00 app[web.1]: Started POST "/sessions" for 68.34.28.20 at 2011-06-19 22:19:08 -0700
+2011-06-20T05:19:08+00:00 app[web.1]:   Processing by SessionsController#create as HTML
+2011-06-20T05:19:08+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"dRnY6WuUF1F79sMCgaPL4qWXnCBXcVwxhb0h7oS1AY0=", "email"=>"a@abc.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+2011-06-20T05:19:08+00:00 app[web.1]: Redirected to http://hollow-stone-599.heroku.com/lists
+2011-06-20T05:19:08+00:00 app[web.1]: Completed 302 Found in 86ms
+2011-06-20T05:19:08+00:00 heroku[router]: POST hollow-stone-599.heroku.com/sessions dyno=web.1 queue=0 wait=0ms service=90ms bytes=106
+2011-06-20T05:19:08+00:00 app[web.1]: 
+2011-06-2
+0T05:19:08+00:00 app[web.1]: 
+2011-06-20T05:19:08+00:00 app[web.1]: Started GET "/lists" for 68.34.28.20 at 2011-06-19 22:19:08 -0700
+2011-06-20T05:19:08+00:00 app[web.1]:   Processing by ListsController#index as HTML
+2011-06-20T05:19:08+00:00 app[web.1]: Rendered lists/index.iphone.erb within layouts/application (8.3ms)
+2011-06-20T05:19:08+00:00 app[web.1]: Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 5.7ms)
+2011-06-20T05:19:08+00:00 heroku[router]: GET hollow-stone-599.heroku.com/lists dyno=web.1 queue=0 wait=0ms service=15ms bytes=2747
+2011-06-20T05:19:08+00:00 heroku[router]: GET hollow-stone-599.heroku.com/javascripts/jquery_ujs.js dyno=web.1 queue=0 wait=0ms service=6ms bytes=12912
+2011-06-20T05:19:08+00:00 heroku[router]: GET hollow-stone-599.heroku.com/javascripts/jquery.min.js dyno=web.1 queue=0 wait=0ms service=5ms bytes=91342
+2011-06-20T05:19:08+00:00 heroku[router]: GET hollow-stone-599.heroku.com/jquery.cookie.js dyno=web.1 queue=0 wait=0ms service=4ms bytes=728
+2011-06-20T05:19:08+00:00 app[web.1]: 
+2011-06-20T05:19:08+00:00 app[web.1]: 
+2011-06-20T05:19:08+00:00 app[web.1]: Started GET "/jquery.cookie.js" for 68.34.28.20 at 2011-06-19 22:19:08 -0700
+2011-06-20T05:19:08+00:00 app[web.1]: 
+2011-06-20T05:19:08+00:00 app[web.1]: ActionController::RoutingError (No route matches "/jquery.cookie.js"):
+2011-06-20T05:19:08+00:00 app[web.1]:   
+2011-06-20T05:19:08+00:00 app[web.1]: 
+2011-06-20T05:19:08+00:00 app[web.1]: 
+2011-06-20T05:19:09+00:00 heroku[nginx]: GET /javascripts/jquery_ujs.js?1308546896 HTTP/1.1 | 68.34.28.20 | 232 | http | 304
+2011-06-20T05:19:09+00:00 heroku[nginx]: GET /javascripts/jquery.min.js?1308546896 HTTP/1.1 | 68.34.28.20 | 231 | http | 304
+2011-06-20T05:19:16+00:00 app[web.1]: 
+2011-06-20T05:19:16+00:00 app[web.1]: 
+2011-06-20T05:19:16+00:00 app[web.1]: Started GET "/lists/new" for 68.34.28.20 at 2011-06-19 22:19:16 -0700
+2011-06-20T05:19:16+00:00 app[web.1]:   Processing by ListsController#new as */*
+2011-06-20T05:19:16+00:00 app[web.1]: Rendered lists/_form.iphone.erb (1.9ms)
+2011-06-20T05:19:16+00:00 heroku[router]: GET hollow-stone-599.heroku.com/lists/new dyno=web.1 queue=0 wait=0ms service=10ms bytes=2232
+2011-06-20T05:19:16+00:00 app[web.1]: Rendered lists/new.iphone.erb within layouts/application (5.4ms)
+2011-06-20T05:19:16+00:00 app[web.1]: Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 1.9ms)
+2011-06-20T05:19:16+00:00 heroku[nginx]: GET /lists/new HTTP/1.1 | 68.34.28.20 | 287 | http | 304
+2011-06-20T05:19:30+00:00 app[web.1]: 
+2011-06-20T05:19:30+00:00 app[web.1]: 
+2011-06-20T05:19:30+00:00 app[web.1]: Started POST "/lists" for 68.34.28.20 at 2011-06-19 22:19:30 -0700
+2011-06-20T05:19:30+00:00 app[web.1]:   Processing by ListsController#create as HTML
+2011-06-20T05:19:30+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"dRnY6WuUF1F79sMCgaPL4qWXnCBXcVwxhb0h7oS1AY0=", "list"=>{"crdate"=>"06/19/2011", "store"=>"Costco", "item"=>"Milk", "qty"=>"1", "user_id"=>"1"}, "commit"=>"Save Item"}
+2011-06-20T05:19:30+00:00 heroku[router]: POST hollow-stone-599.heroku.com/lists dyno=web.1 queue=0 wait=0ms service=32ms bytes=106
+2011-06-20T05:19:30+00:00 app[web.1]: Redirected to http://hollow-stone-599.heroku.com/lists
+2011-06-20T05:19:30+00:00 app[web.1]: Completed 302 Found in 27ms
+2011-06-20T05:19:30+00:00 app[web.1]: 
+2011-06-20T05:19:30+00:00 app[web.1]: 
+2011-06-20T05:19:30+00:00 app[web.1]: Started GET "/lists" for 68.34.28.20 at 2011-06-19 22:19:30 -0700
+2011-06-20T05:19:30+00:00 app[web.1]:   Processing by ListsController#index as HTML
+2011-06-20T05:19:30+00:00 app[web.1]: Rendered lists/index.iphone.erb within layouts/application (10.7ms)
+2011-06-20T05:19:30+00:00 app[web.1]: Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 24.9ms)
+2011-06-20T05:19:30+00:00 heroku[router]: GET hollow-stone-599.heroku.com/lists dyno=web.1 queue=0 wait=0ms service=22ms bytes=2942
+2011-06-20T05:19:31+00:00 heroku[router]: GET hollow-stone-599.heroku.com/javascripts/jquery_ujs.js dyno=web.1 queue=0 wait=0ms service=6ms bytes=12912
+2011-06-20T05:19:31+00:00 app[web.1]: 
+2011-06-20T05:19:31+00:00 app[web.1]: 
+2011-06-20T05:19:31+00:00 app[web.1]: Started GET "/jquery.cookie.js" for 68.34.28.20 at 2011-06-19 22:19:31 -0700
+2011-06-20T05:19:31+00:00 app[web.1]: 
+2011-06-20T05:19:31+00:00 app[web.1]: ActionController::RoutingError (No route matches "/jquery.cookie.js"):
+2011-06-20T05:19:31+00:00 app[web.1]:   
+2011-06-20T05:19:31+00:00 app[web.
+1]: 
+2011-06-20T05:19:31+00:00 app[web.1]: 
+2011-06-20T05:19:31+00:00 heroku[router]: GET hollow-stone-599.heroku.com/jquery.cookie.js dyno=web.1 queue=0 wait=0ms service=8ms bytes=728
+2011-06-20T05:19:31+00:00 heroku[nginx]: POST /lists HTTP/1.1 | 68.34.28.20 | 840 | http | 302
+2011-06-20T05:19:31+00:00 heroku[nginx]: GET /javascripts/jquery.min.js?1308546896 HTTP/1.1 | 68.34.28.20 | 231 | http | 304
+2011-06-20T05:19:31+00:00 heroku[nginx]: GET /jquery.cookie.js HTTP/1.1 | 68.34.28.20 | 948 | http | 404
+2011-06-20T05:21:01+00:00 app[web.1]: 
+2011-06-20T05:21:01+00:00 app[web.1]: 
+2011-06-20T05:21:01+00:00 app[web.1]: Started GET "/lists/new" for 68.34.28.20 at 2011-06-19 22:21:01 -0700
+2011-06-20T05:21:01+00:00 app[web.1]:   Processing by ListsController#new as */*
+2011-06-20T05:21:01+00:00 heroku[router]: GET hollow-stone-599.heroku.com/lists/new dyno=web.1 queue=0 wait=0ms service=13ms bytes=2232
+2011-06-20T05:21:01+00:00 app[web.1]: Rendered lists/_form.iphone.erb (2.0ms)
+2011-06-20T05:21:01+00:00 app[web.1]: Rendered lists/new.iphone.erb within layouts/application (6.0ms)
+2011-06-20T05:21:01+00:00 app[web.1]: Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 2.2ms)
+2011-06-20T05:21:01+00:00 heroku[nginx]: GET /lists/new HTTP/1.1 | 68.34.28.20 | 1562 | http | 200

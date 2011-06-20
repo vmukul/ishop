@@ -1,45 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/public/javascripts/application.js</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/layouts/application.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/controllers/browsers_controller.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/controllers/application_controller.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/config/routes.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/controllers/lists_controller.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/controllers/pages_controller.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/index.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/new.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/index.iphone.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/edit.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/done.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/_form.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/helpers/application_helper.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/helpers/listqueries_helper.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/helpers/pages_helper.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/controllers/users_controller.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/controllers/sessions_controller.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/pages/new.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/public/images/photo.png</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/controllers/listqueries_controller.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/show.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/search.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/sessions/new.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/pages/new.iphone.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/sessions/new.iphone.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/new.iphone.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/_form.iphone.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/layouts/application.iphone.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/users/new.iphone.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/users/new.html.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/config/environments/development.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/edit.iphone.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/helpers/lists_helper.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/helpers/sessions_helper.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/helpers/users_helper.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/models/user.rb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/app/views/lists/show.iphone.erb</file>
-        <file>file:/C:/Documents%20and%20Settings/vm8456/ishop2/public/javascripts/jquery.cookie.js</file>
-    </open-files>
 </project-private>

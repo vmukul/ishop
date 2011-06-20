@@ -15,11 +15,11 @@ class ListsController < ApplicationController
     @list = List.new(params[:list])
     respond_to do |format|
       if @list.save
-        format.html { redirect_to(lists_path, :notice => 'Item added',:style => "color:red" ) }
-        format.iphone { redirect_to(lists_path, :notice => 'Item added',:style => "color:red" ) }
+        format.html { redirect_to(lists_path, :notice => 'Item added') }
+        format.iphone { redirect_to(lists_path, :notice => 'Item added' ) }
       else
         format.html { render :action => "new" }
-        format.iphone { redirect_to(lists_path, :notice => 'Item added',:style => "color:red" ) }
+        format.iphone { redirect_to(lists_path, :notice => 'Item added' ) }
       end
     end
   end
@@ -36,8 +36,8 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
     @list.destroy
     respond_to do |format|
-      format.html { redirect_to(lists_url) }
-      format.iphone { redirect_to(lists_url) }
+      format.html { redirect_to(lists_path,:notice => 'Item Deleted')}
+      format.iphone { redirect_to(lists_path,  :notice => 'Item Deleted') }
     end
   end
 
