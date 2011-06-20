@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Shopping list: <%= controller.action_name %></title>
-<meta name = "viewport" content = "width = device-width, user-scalable = no" />
+<title>Shopping list</title>
 
-
-  <%= stylesheet_link_tag "iphone","desktop" %>
+  <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
   
@@ -22,18 +20,6 @@
    <%= link_to "Log out", log_out_path %>
   <br/>
 
-  <% if false %>
-    <% if is_iphone_request? %>
-      <%= link_to "Switch To Mobile Safari View",
-          {:controller => "browsers", :action => :mobile},
-          :class => "big_link"  %>
-    <% end %>
-
-  <%= link_to "Switch To Desktop View",
-          {:controller => "browsers", :action => :desktop},
-          :class => "mobile_link"  %>
-<% end %>
-
   <% else %>
     <%= link_to "Home", root_path %>
     <%= link_to "Sign up", sign_up_path %> or
@@ -41,8 +27,7 @@
      <br/>
   <% end %>
 </div> 
-
-
+<%= "Flash msg will display below" %>
   <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, :id => "flash#{name}" %>
   <% end %>

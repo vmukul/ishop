@@ -37,7 +37,7 @@ class ListsController < ApplicationController
     @list.destroy
     respond_to do |format|
       format.html { redirect_to(lists_url) }
-      format.iphone { redirect_to lists_path }
+      format.iphone { redirect_to(lists_url) }
     end
   end
 

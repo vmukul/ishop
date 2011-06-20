@@ -1,11 +1,11 @@
 <%= form_for @list do |f| %>
   <p>
-    <%= f.label :crdate %>
-    <%= f.text_field :crdate,:value => Time.now.strftime("%x") %>
+    <%= f.label :Date %>
+    <%= f.text_field :crdate,:value => Time.now.strftime("%m/%d/%Y") %>
   </p>
   <p>
     <%= f.label :store %>
-     <%= f.text_field :store %>
+     <%= f.text_field :store, :size => 20 %>
 
   </p>
    <p>

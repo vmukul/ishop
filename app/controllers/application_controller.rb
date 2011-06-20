@@ -4,6 +4,11 @@ class ApplicationController < ActionController::Base
   before_filter :set_iphone_format
   helper_method :is_iphone_request?
 
+  private
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+
   def is_iphone_request?
       request.user_agent =~ /(Mobile\/.+Safari)/
     end
@@ -23,8 +28,5 @@ class ApplicationController < ActionController::Base
       end
     end
 
-  private
-  def current_user
-    @current_user ||= User.find(session[:user_id]) if session[:user_id]
-  end
+
 end
