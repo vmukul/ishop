@@ -49,8 +49,8 @@ class ListsController < ApplicationController
    @list.update_attributes(:mdone => 1)
   end
      respond_to do |format|
-        format.html { redirect_to(lists_path, :notice => 'List item market as Done or Undone') }
-        format.iphone { redirect_to(lists_path, :notice => 'List item market as Done or Undone') }
+        format.html { redirect_to(lists_path, :notice => 'Done') }
+        format.iphone { redirect_to(lists_path, :notice => 'Done') }
      end
     end
 

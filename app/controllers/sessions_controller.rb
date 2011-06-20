@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
         @cu = 1
         redirect_to lists_path
       else
-        flash.now.alert = "Invalid login"
+        flash.now.alert = "Bad login"
         render "new"
       end
     end
