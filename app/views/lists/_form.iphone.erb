@@ -1,7 +1,7 @@
 <%= form_for @list do |f| %>
   <p>
     <%= f.label :crdate %>
-    <%=  f.date_select :crdate %>
+    <%=  f.text_field :crdate, :value => Date.today.strftime("%v") %>
   </p>
   <p>
     <%= f.label :store %>
@@ -26,7 +26,3 @@
   </div>
 
 <% end %>
-
-<div  data-role="footer">
-    (c) zLista : <%= flash[:notice] %>
-  </div>
