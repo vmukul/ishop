@@ -1,5 +1,5 @@
 <div data-role="header">
-<h1>Shopping list <%= current_user.email %> </h1>
+<h1>Shopping list</h1>
 <%= link_to "Log Out", log_out_path, "data-icon" => "plus", "class" => "ui-btn-left", :notice => @cu %>
 <%= link_to 'Add', new_list_path, :notice => 'Add items', "data-icon" => "plus", "class" => "ui-btn-right" %>
 </div>

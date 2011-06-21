@@ -1,6 +1,6 @@
  <div data-role="header">
 <% if  current_user %>
-   <h1><%= current_user.id %></h1>
+   <h1>Shopping List</h1>
    <%= link_to "See list", lists_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
    <%= link_to "Log out", log_out_path, "data-icon" => "plus", "class" => "ui-btn-left" %>
   <% else %>

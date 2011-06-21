@@ -11,8 +11,7 @@ class SessionsController < ApplicationController
       user = User.authenticate(params[:email], params[:password])
       if user
         session[:user_id] = user.id
-        @cu = 1
-        redirect_to lists_path
+        redirect_to lists_path, :notice => current_user.email
       else
         flash.now.alert = "Bad login"
         render "new"
