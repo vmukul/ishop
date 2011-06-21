@@ -1,6 +1,6 @@
 <%= form_for @list do |f| %>
   <p>
-    <%= f.label :crdate %>
+    <%= f.label "Date" %>
     <%=  f.text_field :crdate, :value => Date.today.strftime("%v") %>
   </p>
   <p>
