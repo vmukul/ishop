@@ -1,10 +1,10 @@
  <div data-role="header">
 <% if  current_user %>
-   <h1><%=flash[:notice]%><%= current_user.id %></h1>
+   <h1><%= current_user.id %></h1>
    <%= link_to "See list", lists_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
    <%= link_to "Log out", log_out_path, "data-icon" => "plus", "class" => "ui-btn-left" %>
   <% else %>
-   <h1><%=flash[:notice]%>Shopping List</h1>
+   <h1>Shopping List</h1>
    <%= link_to "Sign up", sign_up_path, "data-icon" => "plus", "class" => "ui-btn-left" %>
     <%= link_to "Log in", log_in_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
   <% end %>
