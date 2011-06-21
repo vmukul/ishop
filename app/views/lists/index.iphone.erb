@@ -8,8 +8,9 @@
   <ul data-role="listview">
       <% @list.each do |list| %>
         <li>
-          <%= link_to list.crdate.strftime("%e-%b")+", "+list.store+", "+list.item+", "+list.qty, edit_list_path(list), "data-filter" => true %>
+          <%= link_to list.crdate+", "+list.store+", "+list.item+", "+list.qty, edit_list_path(list), "data-filter" => true %>
           <%= link_to 'Delete',list, :method => :delete,"data-icon" => 'delete' %>
+          <% # .strftime("%e-%b") %>
         </li>
      <% end %>
   </ul>
