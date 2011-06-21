@@ -1,0 +1,103 @@
+2011-06-21T00:49:23+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
+2011-06-21T00:49:23+00:00 app[web.1]: >> Maximum connections set to 1024
+2011-06-21T00:49:23+00:00 app[web.1]: >> Listening on 0.0.0.0:26157, CTRL+C to stop
+2011-06-21T00:49:24+00:00 heroku[web.1]: Stopping process with SIGTERM
+2011-06-21T00:49:24+00:00 app[web.1]: >> Stopping ...
+2011-06-21T00:49:24+00:00 heroku[web.1]: Process exited
+2011-06-21T00:49:26+00:00 heroku[web.1]: Stopping process with SIGTERM
+2011-06-21T00:49:26+00:00 app[web.1]: >> Stopping ...
+2011-06-21T00:49:26+00:00 heroku[web.1]: Process exited
+2011-06-21T00:50:20+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2011-06-21T00:50:20+00:00 heroku[web.1]: Stopping process with SIGKILL
+2011-06-21T00:50:20+00:00 app[web.1]: Stopping due to timeout...
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `call'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/backends/base.rb:57:in `start'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/server.rb:156:in `start'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/controllers/controller.rb:80:in `start'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/runner.rb:177:in `run_command'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/lib/thin/runner.rb:143:in `run!'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/lib/ruby/gems/1.9.1/gems/thin-1.2.6/bin/thin:6:in `<top (required)>'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/bin/thin:19:in `load'
+2011-06-21T00:50:20+00:00 app[web.1]: /usr/ruby1.9.2/bin/thin:19:in `<main>'
+2011-06-21T00:50:20+00:00 heroku[web.1]: Process exited
+2011-06-21T00:50:23+00:00 heroku[web.1]: State changed from starting to crashed
+2011-06-21T00:50:23+00:00 heroku[web.1]: State changed from crashed to created
+2011-06-21T00:50:23+00:00 heroku[web.1]: State changed from created to starting
+2011-06-21T00:50:27+00:00 heroku[web.1]: Starting process with command: `thin -p 40245 -e production -R /home/heroku_rack/heroku.ru start`
+2011-06-21T00:50:31+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
+2011-06-21T00:50:31+00:00 app[web.1]: >> Maximum connections set to 1024
+2011-06-21T00:50:31+00:00 app[web.1]: >> Listening on 0.0.0.0:40245, CTRL+C to stop
+2011-06-21T00:50:36+00:00 heroku[web.1]: State changed from starting to up
+2011-06-21T00:50:49+00:00 app[web.1]: 
+2011-06-21T00:50:49+00:00 app[web.1]: 
+2011-06-21T00:50:49+00:00 
+app[web.1]: Started GET "/lists" for 68.34.28.20 at 2011-06-20 17:50:49 -0700
+2011-06-21T00:50:50+00:00 app[web.1]:   Processing by ListsController#index as HTML
+2011-06-21T00:50:50+00:00 app[web.1]: Rendered lists/index.iphone.erb within layouts/application (30.2ms)
+2011-06-21T00:50:50+00:00 app[web.1]: Completed   in 121ms
+2011-06-21T00:50:50+00:00 app[web.1]: 
+2011-06-21T00:50:50+00:00 app[web.1]: ActionView::Template::Error (undefined method `+' for nil:NilClass):
+2011-06-21T00:50:50+00:00 app[web.1]:     8:   <ul data-role="listview">
+2011-06-21T00:50:50+00:00 app[web.1]:     9:       <% @list.each do |list| %>
+2011-06-21T00:50:50+00:00 app[web.1]:     10:         <li>
+2011-06-21T00:50:50+00:00 app[web.1]:     11:           <%= link_to list.crdate+", "+list.store+", "+list.item+", "+list.qty, edit_list_path(list), "data-filter" => true %>
+2011-06-21T00:50:50+00:00 app[web.1]:     12:           <%= link_to 'Delete',list, :method => :delete,"data-icon" => 'delete' %>
+2011-06-21T00:50:50+00:00 app[web.1]:     13:           <% # .strftime("%e-%b") %>
+2011-06-21T00:50:50+00:00 app[web.1]:     14:         </li>
+2011-06-21T00:50:50+00:00 app[web.1]:   app/views/lists/index.iphone.erb:11:in `block in _app_views_lists_index_iphone_erb__594304431275395819_17984620_3561410142130708600'
+2011-06-21T00:50:50+00:00 app[web.1]:   app/views/lists/index.iphone.erb:9:in `_app_views_lists_index_iphone_erb__594304431275395819_17984620_3561410142130708600'
+2011-06-21T00:50:50+00:00 app[web.1]:   app/controllers/lists_controller.rb:4:in `index'
+2011-06-21T00:50:50+00:00 app[web.1]: 
+2011-06-21T00:50:50+00:00 app[web.1]: 
+2011-06-21T00:50:50+00:00 heroku[router]: GET hollow-stone-599.heroku.com/lists dyno=web.1 queue=0 wait=0ms service=236ms status=500 bytes=728
+2011-06-21T00:50:59+00:00 app[web.1]: 
+2011-06-21T00:50:59+00:00 app[web.1]: 
+2011-06-21T00:50:59+00:00 app[web.1]: Started GET "/" for 68.34.28.20 at 2011-06-20 17:50:59 -0700
+2011-06-21T00:50:59+00:00 app[web.1]:   Processing by PagesController#new as HTML
+2011-06-21T00:50:59+00:00 heroku[router]: GET hollow-stone-599.heroku.com/ dyno=web.1 queue=0 wait=0ms service=26ms status=200 bytes=1035
+2011-06-21T00:50:59+00:00 app[web.1]: Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 9.0ms)
+2011-06-21T00:50:59+00:00 heroku[router]: GET hollow-stone-599.heroku.com/javascripts/application.js dyno=web.1 queue=0 wait=0ms service=67ms status=200 bytes=203
+2011-06-21T00:50:59+00:00 heroku[router]: GET hollow-stone-599.heroku.com/javascripts/jquery.min.js dyno=web.1 queue=0 wait=0ms service=70ms status=200 bytes=91342
+2011-06-21T00:50:59+00:00 heroku[router]: GET hollow-stone-599.heroku.com/javascripts/jquery_ujs.js dyno=web.1 queue=1 wait=61ms service=7ms status=200 bytes=12912
+2011-06-21T00:51:00+00:00 heroku[nginx]: GET /javascripts/jquery_ujs.js?1308617343 HTTP/1.1 | 68.34.28.20 | 4381 | http | 200
+2011-06
+-21T00:51:00+00:00 heroku[nginx]: GET /javascripts/jquery.min.js?1308617343 HTTP/1.1 | 68.34.28.20 | 33329 | http | 200
+2011-06-21T00:51:02+00:00 app[web.1]:   app/views/lists/index.iphone.erb:11:in `block in _app_views_lists_index_iphone_erb__594304431275395819_17984620_3561410142130708600'
+2011-06-21T00:51:02+00:00 heroku[router]: GET hollow-stone-599.heroku.com/lists dyno=web.1 queue=0 wait=0ms service=16ms status=500 bytes=728
+2011-06-21T00:51:04+00:00 app[web.1]: 
+2011-06-21T00:51:04+00:00 app[web.1]: 
+2011-06-21T00:51:04+00:00 app[web.1]: Started GET "/log_out" for 68.34.28.20 at 2011-06-20 17:51:04 -0700
+2011-06-21T00:51:04+00:00 app[web.1]:   Processing by SessionsController#destroy as */*
+2011-06-21T00:51:04+00:00 app[web.1]: Redirected to http://hollow-stone-599.heroku.com/
+2011-06-21T00:51:04+00:00 app[web.1]: Completed 302 Found in 1ms
+2011-06-21T00:51:04+00:00 heroku[router]: GET hollow-stone-599.heroku.com/log_out dyno=web.1 queue=0 wait=0ms service=9ms status=302 bytes=101
+2011-06-21T00:51:05+00:00 app[web.1]: 
+2011-06-21T00:51:05+00:00 app[web.1]: 
+2011-06-21T00:51:05+00:00 app[web.1]: Started GET "/" for 68.34.28.20 at 2011-06-20 17:51:05 -0700
+2011-06-21T00:51:05+00:00 app[web.1]:   Processing by PagesController#new as */*
+2011-06-21T00:51:05+00:00 app[web.1]: Rendered pages/new.iphone.erb within layouts/application (3.0ms)
+2011-06-21T00:51:05+00:00 app[web.1]: Completed 200 OK in 4ms (Views: 3.9ms | Active
+Record: 1.3ms)
+2011-06-21T00:51:05+00:00 heroku[router]: GET hollow-stone-599.heroku.com/ dyno=web.1 queue=0 wait=0ms service=14ms status=200 bytes=1067
+2011-06-21T00:51:05+00:00 heroku[nginx]: GET / HTTP/1.1 | 68.34.28.20 | 1272 | http | 200
+2011-06-21T00:51:07+00:00 app[web.1]: 
+2011-06-21T00:51:07+00:00 app[web.1]: 
+2011-06-21T00:51:07+00:00 app[web.1]: Started GET "/log_in" for 68.34.28.20 at 2011-06-20 17:51:07 -0700
+2011-06-21T00:51:07+00:00 app[web.1]:   Processing by SessionsController#new as */*
+2011-06-21T00:51:07+00:00 heroku[router]: GET hollow-stone-599.heroku.com/log_in dyno=web.1 queue=0 wait=0ms service=14ms status=200 bytes=1572
+2011-06-21T00:51:07+00:00 app[web.1]: Rendered sessions/new.iphone.erb within layouts/application (1.9ms)
+2011-06-21T00:51:07+00:00 app[web.1]: Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+2011-06-21T00:51:17+00:00 app[web.1]: 
+2011-06-21T00:51:17+00:00 app[web.1]: 
+2011-06-21T00:51:17+00:00 app[web.1]: Started POST "/sessions" for 68.34.28.20 at 2011-06-20 17:51:17 -0700
+2011-06-21T00:51:17+00:00 app[web.1]:   Processing by SessionsController#create as HTML
+2011-06-21T00:51:17+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"dRnY6WuUF1F79sMCgaPL4qWXnCBXcVwxhb0h7oS1AY0=", "email"=>"Anika", "password"=>"[FILTERED]", "commit"=>"Log in"}
+2011-06-21T00:51:17+00:00 app[web.1]: Redirected to http://hollow-stone-599.heroku.com/lists
+2011-06-21T00:51:17+00:00 app[web.1]: Completed 302 Found in 95ms
+2011-06-21T00:51:17+00:00 heroku[router]: POST hollow-stone-599.heroku.com/sessions dyno=web.1 queue=0 wait=0ms service=101ms status=302 bytes=106
+2011-06-21T00:51:17+00:00 heroku[router]: GET hollow-stone-599.heroku.com/lists dyno=web.1 queue=0 wait=0ms service=10ms status=500 bytes=728
+2011-06-21T00:51:17+00:00 app[web.1]:     14:         </li>
+2011-06-21T00:51:17+00:00 app[web.1]:   app/views/lists/index.iphone.erb:11:in `block in _app_views_lists_index_iphone_erb__594304431275395819_17984620_3561410142130708600'
+2011-06-21T00:51:17+00:00 app[web.1]:   app/views/lists/index.iphone.erb:9:in `_app_views_lists_index_iphone_erb__594304431275395819_17984620_3561410142130708600'
